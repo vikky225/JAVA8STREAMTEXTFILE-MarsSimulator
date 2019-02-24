@@ -1,0 +1,12 @@
+com\toysimulator\exception\BlockExplorerException.class
+com\toysimulator\exception\ToyExplorerException.class
+com\toysimulator\enums\Command.class
+com\toysimulator\simulator\ToyExplorer.class
+com\toysimulator\Game$1.class
+com\toysimulator\simulator\Position.class
+com\toysimulator\simulator\Board.class
+com\toysimulator\Game.class
+com\toysimulator\simulator\SquareBoard.class
+com\toysimulator\readers\CommandReader.class
+com\toysimulator\Main.class
+com\toysimulator\simulator\BlockExplorer.class
