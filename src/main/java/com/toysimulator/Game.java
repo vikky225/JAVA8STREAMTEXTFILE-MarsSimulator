@@ -28,7 +28,7 @@ public class Game {
      * @return true if placed successfully
      * @throws com.toysimulator.exception.ToyExplorerException
      */
-    public boolean placeToyRobot(Position position) throws ToyExplorerException {
+    public boolean placeToyExplorer(Position position) throws ToyExplorerException {
 
         if (squareBoard == null)
             throw new ToyExplorerException("Invalid squareBoard object");
@@ -57,7 +57,7 @@ public class Game {
      * @return true if placed successfully
      * @throws com.toysimulator.exception.BlockExplorerException
      */
-    public boolean placeBlockRobot(Position position) throws BlockExplorerException {
+    public boolean placeBlockExplorer(Position position) throws BlockExplorerException {
 
         if (squareBoard == null)
             throw new BlockExplorerException("Invalid squareBoard object");
@@ -198,14 +198,14 @@ public class Game {
 
         switch (command) {
             case PLACE:
-                output = String.valueOf(placeToyRobot(new Position(x, y)));
+                output = String.valueOf(placeToyExplorer(new Position(x, y)));
                 break;
             case EXPLORER:
               String  output1 = String.valueOf(shortRoute(new Position(x, y)));
                 output =  "PATH:"+toyExplorer.getRoutes();
                 break;
             case BLOCK:
-                output = String.valueOf(placeBlockRobot(new Position(x, y)));
+                output = String.valueOf(placeBlockExplorer(new Position(x, y)));
                 break;
             case REPORT:
                 output = report();
